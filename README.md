@@ -81,7 +81,7 @@ Your task is to **write the `get_ASes` function**. You will need to use the [Pyt
    "last_ip":"149.43.255.255"
 }
 ```
-The get_ASes function should return a list of tuples, where each tuple contains an AS number and an AS name: e.g., `(1298, 'COLGATE-UNIVERSITY')`. If an IP address does not belong to an AS (e.g., IP addresses in the private address space 172.0.0.0/16), then skip this address. If a sequence of routers have IPs from the same AS, the AS should only be included once.
+The get_ASes function should return a list of tuples, where each tuple contains an AS number and an AS name: e.g., `(1298, 'COLGATE-UNIVERSITY')`. If an IP address does not belong to an AS (e.g., IP addresses in the private address space 172.16.0.0/16), then skip this address. If a sequence of routers have IPs from the same AS, the AS should only be included once.
 
 For example, when you run `path.py` with `traceroute_data/rit.txt`, the program should output:
 
