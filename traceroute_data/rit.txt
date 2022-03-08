@@ -1,0 +1,12 @@
+traceroute to cs.rit.edu (129.21.30.104), 30 hops max, 30 bytes packets
+ 1  172.17.0.1 (172.17.0.1)  0.024ms    0.023ms    0.019ms  
+ 2  vlan0080-hsrp-1.colgate.edu (149.43.80.2)  0.735ms    0.736ms    0.738ms  
+ 3  10.9.52.10 (10.9.52.10)  0.821ms    0.824ms    0.829ms  
+ 4  172.16.1.12 (172.16.1.12)  1.055ms    1.807ms    1.808ms  
+ 5  syr-9208-colgate.nysernet.net (199.109.9.57)  1.324ms    2.146ms    2.146ms  
+ 6  buf-9208-syr-9208.nysernet.net (199.109.7.194)  4.478ms    4.482ms    4.485ms  
+ 7  rit-buf-9208.nysernet.net (199.109.11.10)  6.168ms    6.175ms    6.180ms  
+ 8  rit-rtr001-pp-rit1-100g-vlan856.rit.edu (129.21.8.125)  6.709ms    7.709ms    7.714ms  
+ 9  rit-rtr070-pp-rtr001-vlan852.rit.edu (129.21.8.114)  10.628ms    11.691ms    11.694ms  
+10  spidey.cs.rit.edu (129.21.30.104)  6.008ms    6.015ms    6.019ms  
+
