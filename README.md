@@ -19,7 +19,7 @@ Clone your git repository on the `tigers` servers. Your repository contains:
 ## Part 1: Tracing paths
 Your first task is to determine the paths (i.e., sequence of routers) used to reach various destinations around the world. To accomplish this task, you will run `paris-traceroute` within a Docker container. (If you want to know how Paris traceroute works, you can read this paper after lab: Brice Augustin et al. Avoiding traceroute anomalies with Paris traceroute. In _Internet Measurement Conference (IMC)._ 2006. [https://conferences.sigcomm.org/imc/2006/papers/p15-augustin.pdf](https://conferences.sigcomm.org/imc/2006/papers/p15-augustin.pdf))
 
-You can run `paris-traceroute` in Docker using the `docker_paris.sh` script included in your git repo. For example, to determine the path from the Computer Science department to Google, run:
+You can run `paris-traceroute` in Docker using the `docker_paris.sh` script included in your git repo. For example, to determine the path from the Computer Science department to Rochester Institute of Technology (RIT), run:
 ```bash
 ./docker_traceroute.sh cs.rit.edu 
 ```
@@ -45,7 +45,7 @@ Use `paris-traceroute` to determine the network paths from your Docker container
 -------------------|--------------
 `cs.williams.edu`  | `williams.txt`
 `cs.nyu.edu`       | `nyu.txt`
-`bowdin.edu`       | `bowdin.txt`
+`bowdoin.edu`      | `bowdoin.txt`
 `cs.uchicago.edu`  | `uchicago.txt`
 `cs.carleton.edu`  | `carleton.txt`
 `cs.hmc.edu`       | `harveymudd.txt`
