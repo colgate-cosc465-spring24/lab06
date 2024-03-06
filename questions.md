@@ -8,34 +8,34 @@
 
 
 4. Who is the Internet service provider for each of the destinations? (Hint: look at the last network before the target network)
-Syracuse:
-Morrisville:
-NYU:
-UChicago:
+Syracuse: 
+Morrisville: First Light Fiber
+MTA: Verizon Business
+NYU: NYSERNet
 UCLA:
 Claremont:
 Wollongong:
 TU Berlin:
 
 5. What is the length of each destination's router-level path?
-Syracuse:
-Morrisville:
-NYU:
-UChicago:
+Syracuse: 9
+Morrisville: 12
+MTA: 10
+NYU: 10
 UCLA:
 Claremont:
 Wollongong:
-TU Berlin:
+TU Berlin: 19
 
 6. What is the length of each destination's AS-level path?
-Syracuse:
-Morrisville:
-NYU:
-UChicago:
+Syracuse: 3
+Morrisville: 6
+MTA: 4
+NYU: 3
 UCLA:
 Claremont:
-Wollongong:
-TU Berlin:
+Wollongong: 6
+TU Berlin: 5
 
 7. Is there a correlation between router-level path length and AS-level path length? Why or why not?
 

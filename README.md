@@ -50,8 +50,8 @@ Use `paris-traceroute` to determine the network paths from your Docker container
 ---------------------------|--------------
 `mx-ext.syr.edu`           | `syracuse.txt`
 `dns1.morrisville.edu`     | `morrisville.txt`
+`search.mta.info`          | `mta.txt`
 `cs.nyu.edu`               | `nyu.txt`
-`cs.uchicago.edu`          | `uchicago.txt`
 `pelican.cs.ucla.edu`      | `ucla.txt`
 `ns.claremont.edu`         | `claremont.txt`
 `uow.edu.au`               | `wollongong.txt`
@@ -262,7 +262,7 @@ A few **important notes about ARIN's RDAP servce**:
   "arin_originas0_originautnums" : [ ]
 }
 ```
-The `get_ASes` function should **return a list of registrant names extracted from the entities section of the JSON response**: e.g., `['Colgate University', 'NYSERNet', 'Google LLC']`. If an IP address is in the range of [private addresses defined in RFC 1918](https://datatracker.ietf.org/doc/html/rfc1918#section-3), then skip this address. If a sequence of routers have IPs from the same registrant, the registrant should only be included once.
+The `get_ASes` function should **return a list of names extracted from the entities section of the JSON responses**: e.g., `['Colgate University', 'NYSERNet', 'Google LLC']`. You should only look at the first entity, and only include the entity if its role is "registrant." If an IP address is in the range of [private addresses defined in RFC 1918](https://datatracker.ietf.org/doc/html/rfc1918#section-3), then skip this address. If a sequence of routers have IPs from the same registrant, the registrant should only be included once.
 
 For example, when you run `path.py` with `traceroute_data/google.txt`, the program should output:
 
