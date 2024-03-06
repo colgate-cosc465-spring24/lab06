@@ -7,4 +7,4 @@ fi
 
 DESTINATION=$1
 
-docker run --tty --interactive --rm --name=${USER}_traceroute colgatecosc465/traceroute:latest paris-traceroute $DESTINATION
+docker run --tty --interactive --rm --name=${USER}_traceroute agemberjacobson/cosc465traceroute:latest paris-traceroute $DESTINATION
