@@ -49,7 +49,7 @@ def summarize_path(hops):
     print('\t' + '\n\t'.join(["{}\t{}".format(ip, ("" if hostname is None else hostname)) for ip, hostname in hops]))
     ases = get_ASes(hops)
     print("ASes ({})".format(len(ases)))
-    print('\t' + '\n\t'.join(["{}\t{}".format(asn, name) for asn, name in ases])) 
+    print('\t' + '\n\t'.join(ases))
 
 def main():
     # Parse arguments
